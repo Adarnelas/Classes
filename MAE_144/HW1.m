@@ -63,6 +63,9 @@ end
 
 
 
+
+
+
 function [Gz]=RR_C2D_zoh(Gs,h)
         % function [Gz]=RR_C2D_zoh(Gs,h)
         % Compute (exactly) the Gz(z) corresponding to a D/A-Gs(s)-A/D cascade with timestep h.
