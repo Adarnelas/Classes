@@ -1,0 +1,38 @@
+clear; clc; clf;
+% Q1-Q3
+ao = 0.1
+bo = ao
+d = 6;
+num = [bo];
+den = [1 ao];
+eh = tf(num,den,'InputDelay',d)
+beh = tf(num,den)
+[NUM DEN] = pade(6,4)
+
+sure = tf(NUM,DEN)
+ehbeh = sure*beh
+
+figure(1);
+hold on;
+bode(eh)
+grid on;
+title('With delay')
+hold off;
+
+figure(2);
+hold on;
+bode(beh)
+grid on;
+title('Without delay')
+hold off;
+
+
+
+figure(3);
+rlocus(ehbeh)
+%grid on;
+title('With delay')
+
+
+
+
