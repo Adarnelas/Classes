@@ -64,14 +64,16 @@ Ds = tf(num,den)
 ew = Ds*ehbeh
 
 figure(4);
-bode(ew) % I do not know what is wrong with this so I really don't know how to fix it. I have looked up stuff online and it was not much help. 
+bode(ew) % NVM it seems that script doesn't like what i had here
+ 
+% This part below still stands. I really don't think that I can finsih it
+% and get a full and proper answer to all of it.
 
 % I hadn't touched this until yesterday since I took the weekend off for myself. I
 % just had a lot to deal with during the previous week that getting to this
 % wasn't a big priority. I think if I  had started it on the weekend I
 % would've been able to get further and probably finish it. But I really don't want to frustrate
 % myslef with this so I am just gonna leave it as is.
-
 
 
 
