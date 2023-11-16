@@ -46,6 +46,9 @@ Tu = 1/0.3;
 a = 0.6;
 b = 0.5;
 c = 0.125;
+
+% Q4a
+
 Kp = a*Ku
 Ti = b*Tu
 Td = c*Tu
@@ -64,8 +67,19 @@ Ds = tf(num,den)
 ew = Ds*ehbeh
 
 figure(4);
-bode(ew) % NVM it seems that script doesn't like what i had here
- 
+bode(ew) 
+grid on;
+
+% Q4b
+
+num = [0.0815 0.1141 -0.05108 -0.05216 0.03912]
+den = [1 1.1 0.4333 0.0333 0]
+recon = tf(num,den)
+figure(5)
+stepplot(recon) %stuck again idk what to do
+grid on
+
+
 % This part below still stands. I really don't think that I can finsih it
 % and get a full and proper answer to all of it.
 
